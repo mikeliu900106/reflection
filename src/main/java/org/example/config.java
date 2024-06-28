@@ -1,7 +1,7 @@
 package org.example;
 
 public class config {
-    @MyAnnotation()
+    @MyAnnotation
     public Customer customer(){
         return new Customer("DS","HELLO@email");
     }

@@ -1,6 +1,6 @@
 package org.example;
 
-public class order {
+public class Order {
     private Customer customer;
     private Address address;
 
@@ -11,13 +11,13 @@ public class order {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-
-    public order(Customer customer, Address address) {
+    @MyAnnotation
+    public Order(Customer customer, Address address) {
         this.customer = customer;
         this.address = address;
     }
-
-    public order() {
+    @MyAnnotation
+    public Order() {
     }
 
     public Address getAddress() {
